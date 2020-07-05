@@ -1,0 +1,1 @@
+Using React, this project queries Covid19api.com, showing statistics and charts for countries.

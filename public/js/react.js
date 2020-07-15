@@ -91224,16 +91224,20 @@ module.exports = function(module) {
 
 /***/ }),
 
-/***/ "./resources/js/react.js":
-/*!*******************************!*\
-  !*** ./resources/js/react.js ***!
-  \*******************************/
-/*! no exports provided */
+/***/ "./resources/js/Countries.react.js":
+/*!*****************************************!*\
+  !*** ./resources/js/Countries.react.js ***!
+  \*****************************************/
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Countries; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _CountriesList_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./CountriesList.react */ "./resources/js/CountriesList.react.js");
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
 function _typeof(obj) {
   "@babel/helpers - typeof";
 
@@ -91351,50 +91355,21 @@ function _getPrototypeOf(o) {
   return _getPrototypeOf(o);
 }
 
-var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-
-var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-
-var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-
-var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 
 
 
-var Infections = /*#__PURE__*/function (_React$Component) {
-  _inherits(Infections, _React$Component);
 
-  var _super = _createSuper(Infections);
+var Countries = /*#__PURE__*/function (_React$Component) {
+  _inherits(Countries, _React$Component);
 
-  function Infections() {
-    _classCallCheck(this, Infections);
-
-    return _super.apply(this, arguments);
-  }
-
-  _createClass(Infections, [{
-    key: "render",
-    value: function render() {
-      return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("h1", null, "COVID 19 Statistics by Country"), /*#__PURE__*/React.createElement("small", null, "Using React (JavaScript) - ", /*#__PURE__*/React.createElement("a", {
-        href: "https://www.jonhassall.com"
-      }, "By Jonathan Hassall")), /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement(Countries, null)));
-    }
-  }]);
-
-  return Infections;
-}(React.Component);
-
-var Countries = /*#__PURE__*/function (_React$Component2) {
-  _inherits(Countries, _React$Component2);
-
-  var _super2 = _createSuper(Countries);
+  var _super = _createSuper(Countries);
 
   function Countries(props) {
     var _this;
 
     _classCallCheck(this, Countries);
 
-    _this = _super2.call(this, props);
+    _this = _super.call(this, props);
     _this.getStats = _this.getStats.bind(_assertThisInitialized(_this));
     _this.state = {
       retrieval_status: 'None',
@@ -91562,7 +91537,7 @@ var Countries = /*#__PURE__*/function (_React$Component2) {
     key: "displayError",
     value: function displayError() {
       if (this.state.error) {
-        return /*#__PURE__*/React.createElement("div", {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "alert alert-danger",
           role: "alert"
         }, "No statistics are available for this country.");
@@ -91572,10 +91547,10 @@ var Countries = /*#__PURE__*/function (_React$Component2) {
     key: "displayProgressSpinner",
     value: function displayProgressSpinner() {
       if (this.state.requestedCountryStats.active === false && !this.state.error) {
-        return /*#__PURE__*/React.createElement("div", {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
           className: "spinner-border text-primary",
           role: "status"
-        }, /*#__PURE__*/React.createElement("span", {
+        }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
           className: "sr-only"
         }, "Loading..."));
       }
@@ -91584,7 +91559,7 @@ var Countries = /*#__PURE__*/function (_React$Component2) {
     key: "showChart",
     value: function showChart() {
       if (this.state.chartData) {
-        return /*#__PURE__*/React.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_0__["Line"], {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_2__["Line"], {
           data: this.state.chartData
         });
       }
@@ -91592,36 +91567,36 @@ var Countries = /*#__PURE__*/function (_React$Component2) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal fade",
         tabIndex: "-1",
         role: "dialog",
         id: "myModal"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-dialog modal-dialog-centered",
         role: "document"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-content"
-      }, /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-header"
-      }, /*#__PURE__*/React.createElement("h5", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h5", {
         className: "modal-title"
-      }, "COVID-19 Statistics for ", this.state.requestedCountry.Country), /*#__PURE__*/React.createElement("button", {
+      }, "COVID-19 Statistics for ", this.state.requestedCountry.Country), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "button",
         className: "close",
         "data-dismiss": "modal",
         "aria-label": "Close"
-      }, /*#__PURE__*/React.createElement("span", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
         "aria-hidden": "true"
-      }, "\xD7"))), /*#__PURE__*/React.createElement("div", {
+      }, "\xD7"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-body"
-      }, /*#__PURE__*/React.createElement("div", null, this.displayError()), /*#__PURE__*/React.createElement("p", null, "Total confirmed cases: ", this.formatNumber(this.state.requestedCountryStats.confirmed), /*#__PURE__*/React.createElement("br", null), "Total active cases: ", this.formatNumber(this.state.requestedCountryStats.active), /*#__PURE__*/React.createElement("br", null), "Total deaths: ", this.formatNumber(this.state.requestedCountryStats.deaths)), /*#__PURE__*/React.createElement("p", null, this.showChart())), /*#__PURE__*/React.createElement("div", {
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.displayError()), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Total confirmed cases: ", this.formatNumber(this.state.requestedCountryStats.confirmed), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Total active cases: ", this.formatNumber(this.state.requestedCountryStats.active), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), "Total deaths: ", this.formatNumber(this.state.requestedCountryStats.deaths)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, this.showChart())), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
         className: "modal-footer"
-      }, this.displayProgressSpinner(), /*#__PURE__*/React.createElement("button", {
+      }, this.displayProgressSpinner(), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "button",
         className: "btn btn-secondary",
         "data-dismiss": "modal"
-      }, "Close"))))), /*#__PURE__*/React.createElement(CountriesList, {
+      }, "Close"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CountriesList_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
         retrieval_status: this.state.retrieval_status,
         countries: this.state.countries,
         onGetStats: this.getStats
@@ -91630,21 +91605,158 @@ var Countries = /*#__PURE__*/function (_React$Component2) {
   }]);
 
   return Countries;
-}(React.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-var CountriesList = /*#__PURE__*/function (_React$Component3) {
-  _inherits(CountriesList, _React$Component3);
 
-  var _super3 = _createSuper(CountriesList);
+
+/***/ }),
+
+/***/ "./resources/js/CountriesList.react.js":
+/*!*********************************************!*\
+  !*** ./resources/js/CountriesList.react.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CountriesList; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Country_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Country.react */ "./resources/js/Country.react.js");
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = _isNativeReflectConstruct();
+
+  return function _createSuperInternal() {
+    var Super = _getPrototypeOf(Derived),
+        result;
+
+    if (hasNativeReflectConstruct) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return _possibleConstructorReturn(this, result);
+  };
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+
+
+
+var CountriesList = /*#__PURE__*/function (_React$Component) {
+  _inherits(CountriesList, _React$Component);
+
+  var _super = _createSuper(CountriesList);
 
   function CountriesList(props) {
-    var _this4;
+    var _this;
 
     _classCallCheck(this, CountriesList);
 
-    _this4 = _super3.call(this, props);
-    _this4.getStats = _this4.getStats.bind(_assertThisInitialized(_this4));
-    return _this4;
+    _this = _super.call(this, props);
+    _this.getStats = _this.getStats.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(CountriesList, [{
@@ -91663,43 +91775,178 @@ var CountriesList = /*#__PURE__*/function (_React$Component3) {
   }, {
     key: "countriesList",
     value: function countriesList(props) {
-      var _this5 = this;
+      var _this2 = this;
 
       if (this.props.countries) {
         console.log('countriesList');
       }
 
-      return /*#__PURE__*/React.createElement("div", null, this.props.countries.map(function (item, index) {
-        return /*#__PURE__*/React.createElement(Country, {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, this.props.countries.map(function (item, index) {
+        return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Country_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: index,
           item: item,
-          onGetStats: _this5.getStats
+          onGetStats: _this2.getStats
         });
       }));
     }
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("div", null, "Press a country to retrieve infection statistics:", /*#__PURE__*/React.createElement("br", null), this.countriesList());
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, "Press a country to retrieve infection statistics:", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", null), this.countriesList());
     }
   }]);
 
   return CountriesList;
-}(React.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-var Country = /*#__PURE__*/function (_React$Component4) {
-  _inherits(Country, _React$Component4);
 
-  var _super4 = _createSuper(Country);
+
+/***/ }),
+
+/***/ "./resources/js/Country.react.js":
+/*!***************************************!*\
+  !*** ./resources/js/Country.react.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Country; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = _isNativeReflectConstruct();
+
+  return function _createSuperInternal() {
+    var Super = _getPrototypeOf(Derived),
+        result;
+
+    if (hasNativeReflectConstruct) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return _possibleConstructorReturn(this, result);
+  };
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+
+
+var Country = /*#__PURE__*/function (_React$Component) {
+  _inherits(Country, _React$Component);
+
+  var _super = _createSuper(Country);
 
   function Country(props) {
-    var _this6;
+    var _this;
 
     _classCallCheck(this, Country);
 
-    _this6 = _super4.call(this, props);
-    _this6.handleClick = _this6.handleClick.bind(_assertThisInitialized(_this6));
-    return _this6;
+    _this = _super.call(this, props);
+    _this.handleClick = _this.handleClick.bind(_assertThisInitialized(_this));
+    return _this;
   }
 
   _createClass(Country, [{
@@ -91713,7 +91960,7 @@ var Country = /*#__PURE__*/function (_React$Component4) {
   }, {
     key: "render",
     value: function render() {
-      return /*#__PURE__*/React.createElement("span", null, /*#__PURE__*/React.createElement("button", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
         type: "button",
         className: "btn btn-primary btn-sm m-1",
         onClick: this.handleClick
@@ -91722,9 +91969,192 @@ var Country = /*#__PURE__*/function (_React$Component4) {
   }]);
 
   return Country;
-}(React.Component);
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
 
-ReactDOM.render( /*#__PURE__*/React.createElement(Infections, null), document.getElementById('root'));
+
+
+/***/ }),
+
+/***/ "./resources/js/Infections.react.js":
+/*!******************************************!*\
+  !*** ./resources/js/Infections.react.js ***!
+  \******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Infections; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Countries_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Countries.react */ "./resources/js/Countries.react.js");
+function _typeof(obj) {
+  "@babel/helpers - typeof";
+
+  if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") {
+    _typeof = function _typeof(obj) {
+      return typeof obj;
+    };
+  } else {
+    _typeof = function _typeof(obj) {
+      return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+  }
+
+  return _typeof(obj);
+}
+
+function _classCallCheck(instance, Constructor) {
+  if (!(instance instanceof Constructor)) {
+    throw new TypeError("Cannot call a class as a function");
+  }
+}
+
+function _defineProperties(target, props) {
+  for (var i = 0; i < props.length; i++) {
+    var descriptor = props[i];
+    descriptor.enumerable = descriptor.enumerable || false;
+    descriptor.configurable = true;
+    if ("value" in descriptor) descriptor.writable = true;
+    Object.defineProperty(target, descriptor.key, descriptor);
+  }
+}
+
+function _createClass(Constructor, protoProps, staticProps) {
+  if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+  if (staticProps) _defineProperties(Constructor, staticProps);
+  return Constructor;
+}
+
+function _inherits(subClass, superClass) {
+  if (typeof superClass !== "function" && superClass !== null) {
+    throw new TypeError("Super expression must either be null or a function");
+  }
+
+  subClass.prototype = Object.create(superClass && superClass.prototype, {
+    constructor: {
+      value: subClass,
+      writable: true,
+      configurable: true
+    }
+  });
+  if (superClass) _setPrototypeOf(subClass, superClass);
+}
+
+function _setPrototypeOf(o, p) {
+  _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+    o.__proto__ = p;
+    return o;
+  };
+
+  return _setPrototypeOf(o, p);
+}
+
+function _createSuper(Derived) {
+  var hasNativeReflectConstruct = _isNativeReflectConstruct();
+
+  return function _createSuperInternal() {
+    var Super = _getPrototypeOf(Derived),
+        result;
+
+    if (hasNativeReflectConstruct) {
+      var NewTarget = _getPrototypeOf(this).constructor;
+
+      result = Reflect.construct(Super, arguments, NewTarget);
+    } else {
+      result = Super.apply(this, arguments);
+    }
+
+    return _possibleConstructorReturn(this, result);
+  };
+}
+
+function _possibleConstructorReturn(self, call) {
+  if (call && (_typeof(call) === "object" || typeof call === "function")) {
+    return call;
+  }
+
+  return _assertThisInitialized(self);
+}
+
+function _assertThisInitialized(self) {
+  if (self === void 0) {
+    throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+  }
+
+  return self;
+}
+
+function _isNativeReflectConstruct() {
+  if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+  if (Reflect.construct.sham) return false;
+  if (typeof Proxy === "function") return true;
+
+  try {
+    Date.prototype.toString.call(Reflect.construct(Date, [], function () {}));
+    return true;
+  } catch (e) {
+    return false;
+  }
+}
+
+function _getPrototypeOf(o) {
+  _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+    return o.__proto__ || Object.getPrototypeOf(o);
+  };
+  return _getPrototypeOf(o);
+}
+
+
+
+
+var Infections = /*#__PURE__*/function (_React$Component) {
+  _inherits(Infections, _React$Component);
+
+  var _super = _createSuper(Infections);
+
+  function Infections() {
+    _classCallCheck(this, Infections);
+
+    return _super.apply(this, arguments);
+  }
+
+  _createClass(Infections, [{
+    key: "render",
+    value: function render() {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "COVID 19 Statistics by Country"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Using React (JavaScript) - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+        href: "https://www.jonhassall.com"
+      }, "By Jonathan Hassall")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Countries_react__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
+    }
+  }]);
+
+  return Infections;
+}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+
+
+
+/***/ }),
+
+/***/ "./resources/js/react.js":
+/*!*******************************!*\
+  !*** ./resources/js/react.js ***!
+  \*******************************/
+/*! no exports provided */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _Infections_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Infections.react */ "./resources/js/Infections.react.js");
+var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+
+var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+
+
+ReactDOM.render( /*#__PURE__*/React.createElement(_Infections_react__WEBPACK_IMPORTED_MODULE_0__["default"], null), document.getElementById('root'));
 
 /***/ }),
 

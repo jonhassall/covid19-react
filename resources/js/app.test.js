@@ -10,9 +10,9 @@ import CountriesList from './CountriesList.react'
 import { shallow, mount, render } from 'enzyme';
 
 //Block console.log
-// beforeEach(() => {
-//     jest.spyOn(console, 'log').mockImplementation(() => { });
-// });
+beforeEach(() => {
+    jest.spyOn(console, 'log').mockImplementation(() => { });
+});
 
 //Simple unit tests
 test('Country shows country title 1', () => {

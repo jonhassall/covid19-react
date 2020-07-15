@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Country from './Country.react'
 
 export default class CountriesList extends React.Component {
@@ -27,7 +26,7 @@ export default class CountriesList extends React.Component {
         return (
             <div>
                 {this.props.countries.map((item, index) => (
-                    <Country key={index} item={item} onGetStats={this.getStats} />
+                    <Country key={index} item={item} onGetStats={this.getStats} className="country" />
                 ))}
             </div>
         )

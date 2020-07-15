@@ -91789,7 +91789,8 @@ var CountriesList = /*#__PURE__*/function (_React$Component) {
         return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Country_react__WEBPACK_IMPORTED_MODULE_1__["default"], {
           key: index,
           item: item,
-          onGetStats: _this2.getStats
+          onGetStats: _this2.getStats,
+          className: "country"
         });
       }));
     }
@@ -92126,7 +92127,9 @@ var Infections = /*#__PURE__*/function (_React$Component) {
   _createClass(Infections, [{
     key: "render",
     value: function render() {
-      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "COVID 19 Statistics by Country"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Using React (JavaScript) - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
+        id: "title"
+      }, "COVID 19 Statistics by Country"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", null, "Using React (JavaScript) - ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
         href: "https://www.jonhassall.com"
       }, "By Jonathan Hassall")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Countries_react__WEBPACK_IMPORTED_MODULE_1__["default"], null)));
     }
@@ -92149,9 +92152,11 @@ var Infections = /*#__PURE__*/function (_React$Component) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Infections_react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Infections.react */ "./resources/js/Infections.react.js");
+/* harmony import */ var _Country_react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Country.react */ "./resources/js/Country.react.js");
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
+
 
 
 ReactDOM.render( /*#__PURE__*/React.createElement(_Infections_react__WEBPACK_IMPORTED_MODULE_0__["default"], null), document.getElementById('root'));

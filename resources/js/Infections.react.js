@@ -5,7 +5,7 @@ export default class Infections extends React.Component {
     render() {
         return (
             <div>
-                <h1>COVID 19 Statistics by Country</h1>
+                <h1 id="title">COVID 19 Statistics by Country</h1>
                 <small>Using React (JavaScript) - <a href="https://www.jonhassall.com">By Jonathan Hassall</a></small>
                 <div>
                     <Countries />

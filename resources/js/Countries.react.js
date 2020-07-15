@@ -1,6 +1,8 @@
 import React from 'react';
 import CountriesList from './CountriesList.react';
 import { Line } from 'react-chartjs-2';
+var axios = require('axios');
+var _ = require('lodash');
 
 export default class Countries extends React.Component {
     constructor(props) {

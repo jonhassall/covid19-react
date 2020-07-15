@@ -91359,6 +91359,10 @@ function _getPrototypeOf(o) {
 
 
 
+var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+
+var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
+
 var Countries = /*#__PURE__*/function (_React$Component) {
   _inherits(Countries, _React$Component);
 
@@ -92148,10 +92152,6 @@ __webpack_require__.r(__webpack_exports__);
 var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
 var ReactDOM = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
-
-var axios = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-
-var _ = __webpack_require__(/*! lodash */ "./node_modules/lodash/lodash.js");
 
 
 ReactDOM.render( /*#__PURE__*/React.createElement(_Infections_react__WEBPACK_IMPORTED_MODULE_0__["default"], null), document.getElementById('root'));
